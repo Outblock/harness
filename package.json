@@ -1,6 +1,7 @@
 {
   "name": "fcl-harness",
   "version": "0.1.0",
+  "homepage": "https://outblock.github.io/harness",
   "dependencies": {
     "@onflow/fcl": "1.1.1-alpha.0",
     "@onflow/transport-http": "^1.3.1-alpha.0",
@@ -12,6 +13,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
@@ -33,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
