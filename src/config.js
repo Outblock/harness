@@ -5,4 +5,7 @@ fcl.config()
   .put("accessNode.api", "https://rest-testnet.onflow.org")
   .put("sdk.transport", httpSend)
   .put("env", "testnet")
-  .put("discovery.wallet", "https://fcl-discovery.onflow.org/testnet/authn")
+  .put("discovery.wallet.method", "EXT/RPC")
+  .put("discovery.wallet", "chrome-extension://hpclkefagolihohboafpheddmmgdffjm/popup.html")
+  // .put("discovery.wallet", "https://fcl-discovery.onflow.org/testnet/authn")
+
