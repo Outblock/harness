@@ -3,12 +3,18 @@
   "version": "0.1.0",
   "homepage": "https://outblock.github.io/harness",
   "dependencies": {
-    "@onflow/fcl": "1.1.1-alpha.0",
-    "@onflow/transport-http": "^1.3.1-alpha.0",
-    "@onflow/types": "^1.0.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "^4.0.3",
+    "@noble/hashes": "^1.3.1",
+    "@noble/secp256k1": "^2.0.0",
+    "@onflow/fcl": "1.4.0",
+    "@onflow/transport-http": "^1.6.0",
+    "@onflow/types": "^1.1.0",
+    "buffer": "^6.0.3",
+    "elliptic": "^6.5.4",
+    "js-sha256": "^0.9.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "sha3": "^2.1.4",
     "swr": "^0.4.2",
     "web-vitals": "^1.0.1"
   },
@@ -25,19 +31,13 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "react-error-overlay": "6.0.9"
   }
 }
