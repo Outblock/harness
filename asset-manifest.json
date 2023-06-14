@@ -1,19 +1,12 @@
 {
   "files": {
-    "main.js": "/harness/static/js/main.ffac9441.chunk.js",
-    "main.js.map": "/harness/static/js/main.ffac9441.chunk.js.map",
-    "runtime-main.js": "/harness/static/js/runtime-main.9995e6f1.js",
-    "runtime-main.js.map": "/harness/static/js/runtime-main.9995e6f1.js.map",
-    "static/js/2.16b52c99.chunk.js": "/harness/static/js/2.16b52c99.chunk.js",
-    "static/js/2.16b52c99.chunk.js.map": "/harness/static/js/2.16b52c99.chunk.js.map",
-    "static/js/3.98034337.chunk.js": "/harness/static/js/3.98034337.chunk.js",
-    "static/js/3.98034337.chunk.js.map": "/harness/static/js/3.98034337.chunk.js.map",
+    "main.js": "/harness/static/js/main.6c598a7b.js",
+    "static/js/787.e6a1553b.chunk.js": "/harness/static/js/787.e6a1553b.chunk.js",
     "index.html": "/harness/index.html",
-    "static/js/2.16b52c99.chunk.js.LICENSE.txt": "/harness/static/js/2.16b52c99.chunk.js.LICENSE.txt"
+    "main.6c598a7b.js.map": "/harness/static/js/main.6c598a7b.js.map",
+    "787.e6a1553b.chunk.js.map": "/harness/static/js/787.e6a1553b.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.9995e6f1.js",
-    "static/js/2.16b52c99.chunk.js",
-    "static/js/main.ffac9441.chunk.js"
+    "static/js/main.6c598a7b.js"
   ]
 }
