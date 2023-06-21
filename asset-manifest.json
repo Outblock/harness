@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/harness/static/js/main.d5040749.js",
+    "main.js": "/harness/static/js/main.bb22a690.js",
     "static/js/787.e6a1553b.chunk.js": "/harness/static/js/787.e6a1553b.chunk.js",
     "index.html": "/harness/index.html",
-    "main.d5040749.js.map": "/harness/static/js/main.d5040749.js.map",
+    "main.bb22a690.js.map": "/harness/static/js/main.bb22a690.js.map",
     "787.e6a1553b.chunk.js.map": "/harness/static/js/787.e6a1553b.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.d5040749.js"
+    "static/js/main.bb22a690.js"
   ]
 }
