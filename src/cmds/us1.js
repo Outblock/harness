@@ -1,5 +1,6 @@
 import {currentUser} from "@onflow/fcl"
 import {yup, nope} from "../util"
+import { Buffer } from "buffer";
 
 export const LABEL = "User Sign 1 (No Verification)"
 export const CMD = async () => {
