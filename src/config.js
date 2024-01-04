@@ -1,8 +1,14 @@
 import * as fcl from "@onflow/fcl"
 import {send as httpSend} from "@onflow/transport-http"
 
+const resolver = async () => ({
+  appIdentifier: "Awesome App (v0.0)",
+  nonce: "3037366134636339643564623330316636626239323161663465346131393662",
+})
+
 fcl.config()
   .put("flow.network", "testnet")
+  .put("fcl.accountProof.resolver", resolver)
   .put("accessNode.api", "https://rest-testnet.onflow.org")
   .put("sdk.transport", httpSend)
   .put("env", "testnet")
