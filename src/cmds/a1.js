@@ -1,12 +1,19 @@
 import * as fcl from "@onflow/fcl"
 import { yup, nope, serviceOfType } from "../util"
 
-export const LABEL = "Log In with Passkey"
+const resolver = async () => ({
+  appIdentifier: "Awesome App (v0.0)",
+  nonce: "3037366134636339643564623330316636626239323161663465346131393662",
+})
+
+export const LABEL = "Log In with Passkey & Account Proof"
 export const CMD = async() => {
 
   fcl.config()
   .put("discovery.wallet.method", "POP/RPC")
-  .put("discovery.wallet", "http://localhost:3000")
+  // .put("discovery.wallet", "http://localhost:3000")
+  .put("fcl.accountProof.resolver", resolver)
+  .put("discovery.wallet", "https://testnet.passkey.lilico.dev")
 
   let res = await fcl
   .reauthenticate()
@@ -39,7 +46,7 @@ export const CMD = async() => {
     // const verified = await fcl.AppUtils.verifyAccountProof(APP_IDENTIFIER, body, {
     //   fclCryptoContract,
     // })
-    console.log("verified server:", await res.json())
+    // console.log("verified server:", await res.json())
   }
   return res
 } 
