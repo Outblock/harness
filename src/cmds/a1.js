@@ -6,14 +6,16 @@ const resolver = async () => ({
   nonce: "3037366134636339643564623330316636626239323161663465346131393662",
 })
 
-export const LABEL = "Log In with Passkey & Account Proof"
+export const LABEL = "Log In with Account Proof"
 export const CMD = async() => {
 
   fcl.config()
-  .put("discovery.wallet.method", "POP/RPC")
+  // .put("discovery.wallet.method", "POP/RPC")
   // .put("discovery.wallet", "http://localhost:3000")
   .put("fcl.accountProof.resolver", resolver)
-  .put("discovery.wallet", "https://testnet.passkey.lilico.dev")
+  // .put("discovery.wallet", "https://testnet.passkey.lilico.dev")
+    .put("discovery.wallet.method", "EXT/RPC")
+  .put("discovery.wallet", "chrome-extension://hpclkefagolihohboafpheddmmgdffjm/popup.html")
 
   let res = await fcl
   .reauthenticate()

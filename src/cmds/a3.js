@@ -14,4 +14,4 @@ export const CMD = async() => {
   .then(yup("US-1"))
   .then(res => res)
   .catch(nope("US-1"))
-} 
+}
