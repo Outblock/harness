@@ -10,5 +10,6 @@ import * as A1 from "./a1"
 import * as A2 from "./a2"
 import * as A3 from "./a3"
 import * as A4 from "./a4"
+import * as T3 from "./t3"
 
-export const COMMANDS = [LOGIN, A1, A3, A4, LOGOUT, Q1, Q2, M1, M2, US1, US2, A2]
+export const COMMANDS = [LOGIN, A1, A3, A4, LOGOUT, Q1, Q2, M1, M2, US1, US2, A2, T3]
