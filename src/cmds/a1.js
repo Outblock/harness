@@ -33,8 +33,13 @@ export const CMD = async() => {
     const verified = await fcl.AppUtils.verifyAccountProof(
       "Awesome App (v0.0)",
       accountProofService.data,
-      { fclCryptoContract: '0x5b250a8a85b44a67' }
+      { fclCryptoContract: '0x74daa6f9c7ef24b1' }
     )
+
+    // testnet: "0x74daa6f9c7ef24b1",
+    // mainnet: "0xb4b82a1c9d21d284",
+    // previewnet: "0x40b5b8b2ce81ea4a
+    
     console.log("verified client:", verified)
 
     // const res = await fetch("/api/verify", {

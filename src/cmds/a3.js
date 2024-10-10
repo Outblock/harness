@@ -7,7 +7,9 @@ export const CMD = async() => {
   fcl.config()
   .put("discovery.wallet.method", "POP/RPC")
   // .put("discovery.wallet", "http://localhost:3000")
-  .put("discovesry.wallet", "https://testnet.passkey.lilico.dev")
+  .put("discovery.wallet", "https://testnet.passkey.lilico.dev")
+
+  console.log("Log In with Passkey")
 
   await fcl
   .reauthenticate()
